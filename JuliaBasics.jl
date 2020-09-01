@@ -32,4 +32,36 @@ d2 = [6 7 8; 9 10 11]
 hcat(d1, d2)
 vcat(d1, d2)
 
+# functions in julia
 
+function f(x, y, z)
+    x + y + z
+end
+
+# or just assign
+
+g(a, b, c) = a + b + c
+
+# function with return
+
+function β(a, b, c)
+    result = a + b + c
+    return result
+end
+
+β(2,π,3)
+
+# we can use opetator as function
+
+2 * 3 * 4
+*(2,3,4)
+
+# function with default parameters
+
+z(x, y, a = 1, b = 2) = a*x + b*y
+z(3,5)
+
+ # Anonymous function
+
+
+ 
