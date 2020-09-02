@@ -106,4 +106,56 @@ end
 
 
 # control flow
+# compound expression
+
+x = (a = 5; b = 6; a*b)
+
+# other way
+
+x = begin
+    a = 5
+    b = 6
+    a * b
+end
+
+
+# conditional evaluation
+
+function ineq(x, y)
+    if x > y
+        x = 2
+    elseif x < y
+        x = 1
+    else
+        x = 0
+    end    
+end
+
+ineq(1, 2)
+
+# repeated evaluatins: loops
+
+j = 3;
+
+while j > 0
+    println(j^2)
+    global  j -= 1
+end
+
+
+# for loops
+
+for j in [1, 2, 3]
+    println(j)
+end
+
+# we can add ∈ to loops
+
+for j ∈ [1, 2, 3]
+    println(j)
+end
+
+
+# exception handling
+
 
