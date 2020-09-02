@@ -63,5 +63,47 @@ z(3,5)
 
  # Anonymous function
 
+x -> x + 1 # or
 
- 
+function (x)
+    x +1
+end
+
+# Anonymous function generally useing with other first class function
+map(x -> x + 1, [1, 2])
+
+# multiple return values
+
+function ff( a, b, c)
+    a * b * c, a + b + c
+end;
+
+ff(1, 2, 3)
+
+x, y  = ff(1, 2, 3);
+
+display(x)
+display(y)
+
+function fff(a, b, c)
+    multi = a * b * c
+    add = a + b + c
+
+    return multi, add
+end
+
+
+fff(1, 2, 3)
+
+
+# using Anonymous function with multiple piece of code, do-blocks will help
+
+map(x -> x + 1, [1, 2, 3, 4]) # basic way
+
+map([1, 2, 3, 4]) do x # other way 
+     x + 1
+end 
+
+
+# control flow
+
