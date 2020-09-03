@@ -156,6 +156,38 @@ for j ∈ [1, 2, 3]
 end
 
 
-# exception handling
+# warning and informational messages
+
+function f(x)
+    if x<1
+        @warn "x must be positive!"
+        else
+            return x^2
+    end
+end
+
+
+f(2)
+
+function g(x)
+    if x < 1
+        @info "X must be positive!"
+    else
+        return x^2
+    end    
+end
+
+g(-2)
+
+
+# Plotting 
+
+using PyPlot
+x = 1:100
+y = rand(100)
+display(gcf())
+plot(x,y, color = "tomato")
+title("basic graphs in PyPlot")
+
 
 
