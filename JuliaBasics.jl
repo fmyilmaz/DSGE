@@ -188,6 +188,3 @@ y = rand(100)
 display(gcf())
 plot(x,y, color = "tomato")
 title("basic graphs in PyPlot")
-
-
-

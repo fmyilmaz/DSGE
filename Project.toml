@@ -1,3 +1,4 @@
 [deps]
+EmojiSymbols = "c599478c-de41-4aed-94ea-b47665d7a42a"
 Gadfly = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
 PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
